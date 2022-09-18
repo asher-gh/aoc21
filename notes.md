@@ -2,7 +2,9 @@
 
 So I think, this problem will benefit from matrix logic.
 
-I found an [excellent video](https://www.youtube.com/watch?v=XkY2DOUCWMU) by Grant Sanderson
+I found an [excellent video](https://www.youtube.com/watch?v=XkY2DOUCWMU) by
+Grant Sanderson
+
 ## Matrix multiplication
 
 If $\mathbf{A}$ is an $m \times n$ matrix and $\mathbf{B}$ is an $n \times p$
@@ -45,3 +47,9 @@ such that
 $c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \dots + a_{in}b_{nj} = \displaystyle\sum_{k=0}^n a_{ik}b{kj}$
 
 for $i = 1, \dots, m$ and $j = 1, \dots, p$.
+
+# day 6
+
+The first part was simple. However, the second part used almost all of my RAM.
+So instead of adding to the vector, I'll just keep track of the counts of each
+number 1-8 and in each cycle I'll copy next to current.
